@@ -1,0 +1,312 @@
+{
+  "step1_unimodal_input": {
+    "id": "Group1-high-excitement",
+    "text": "家人们快看！这葵瓜子香到离谱，越嗑越上头。\n十包才十六块九，真的很给力，赶紧下单带回家开嗑吧！",
+    "text_path": "examples\\cleand_input\\Group1-high-excitement.txt",
+    "audio_path": "examples\\cleand_input\\Group1-high-excitement.wav",
+    "image_path": "examples\\cleand_input\\Group1-high-excitement.jpg",
+    "brand_personality": "excitement",
+    "meta": {
+      "normalized": true,
+      "renamed": true,
+      "original_paths": {
+        "text": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\examples\\high-excitement.txt",
+        "audio": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\examples\\high-excitement.mp3",
+        "image": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\examples\\high-excitement.jpg"
+      }
+    }
+  },
+  "step2_input_detection_agent": {
+    "A1_theory_driven_detection": {
+      "text": {
+        "modality": "text",
+        "text_path": "examples\\cleand_input\\Group1-high-excitement.txt",
+        "detection_task": "excitement:high/low",
+        "label": "high",
+        "score": 7.75,
+        "item_scores": {
+          "up_to_date": 9,
+          "imaginative": 7,
+          "spirited": 9,
+          "daring": 6
+        }
+      },
+      "audio": {
+        "modality": "audio",
+        "audio_path": "examples\\cleand_input\\Group1-high-excitement.wav",
+        "detection_task": "excitement:high/low",
+        "label": "high",
+        "score": 7.5,
+        "item_scores": {
+          "up_to_date": 8,
+          "imaginative": 6,
+          "spirited": 9,
+          "daring": 7
+        }
+      },
+      "image": {
+        "modality": "image",
+        "image_path": "examples\\cleand_input\\Group1-high-excitement.jpg",
+        "detection_task": "excitement:high/low",
+        "label": "high",
+        "score": 6.75,
+        "item_scores": {
+          "up_to_date": 6,
+          "imaginative": 6,
+          "spirited": 7,
+          "daring": 8
+        }
+      }
+    },
+    "A2_tts_clone": {
+      "success": true,
+      "voice_clone_method": "Qwen3-TTS",
+      "audio_path": "examples\\cleand_input\\Group1-high-excitement_cloned.wav",
+      "text_path": "examples\\Group1-high-excitement_clone_text.txt",
+      "voice_id": "qwen-tts-vc-myvoice-voice-20260304171953772-f3d0",
+      "model": "qwen3-tts-vc-2026-01-22",
+      "message": "Qwen3-TTS voice clone generated"
+    },
+    "A2_data_driven_detections": {
+      "clip": {
+        "score": 0.7491455078125,
+        "method": "hf_clip",
+        "error_message": null
+      },
+      "clap": {
+        "score": 0.5701245591044426,
+        "method": "hf_clap"
+      }
+    },
+    "A3_congruence_evaluation": {
+      "theory_congruence": {
+        "is_consistent": true,
+        "method": "all_high",
+        "details": {
+          "labels": {
+            "text": "high",
+            "audio": "high",
+            "image": "high"
+          },
+          "threshold": "all_high"
+        }
+      },
+      "data_congruence": {
+        "text_image": {
+          "score": 0.7491455078125,
+          "method": "hf_clip",
+          "error_message": null
+        },
+        "text_audio": {
+          "score": 0.5701245591044426,
+          "method": "hf_clap",
+          "error_message": null
+        }
+      },
+      "final": {
+        "is_congruence": true,
+        "reason": null
+      }
+    },
+    "A4_modification_suggestion": {
+      "final_pass": true,
+      "status": "Skipped",
+      "reason": null
+    }
+  },
+  "step3_video_generation_agent": {
+    "enabled": true,
+    "success": true,
+    "status": "success",
+    "backend": "qwen3-tts-hybrid-phrases",
+    "input_video_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\output\\Group1_no_clone.mp4",
+    "extracted_audio_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\output\\voice_clone\\source_audio.wav",
+    "separation": {
+      "backend": "demucs",
+      "speech_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\output\\voice_clone\\separation\\speech.wav",
+      "bgm_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\output\\voice_clone\\separation\\bgm.wav"
+    },
+    "speech_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\output\\voice_clone\\separation\\speech.wav",
+    "bgm_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\output\\voice_clone\\separation\\bgm.wav",
+    "asr_result_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\output\\voice_clone\\asr_raw.json",
+    "asr_corrected_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\output\\voice_clone\\asr_corrected.json",
+    "tts_units_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\output\\voice_clone\\tts_units.json",
+    "reference_audio_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\examples\\high-excitement.mp3",
+    "reference_audio_seconds": 12.352,
+    "segments_manifest_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\output\\voice_clone\\tts_segments.json",
+    "cloned_speech_wav": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\output\\voice_clone\\cloned_speech_timeline.wav",
+    "cloned_audio_gain_db": 5.0,
+    "cloned_audio_volume_linear": 1.0,
+    "cloned_audio_volume_applied": 1.778279,
+    "mixed_audio_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\output\\voice_clone\\mixed_audio.wav",
+    "lipsync": {
+      "enabled": false,
+      "applied": false,
+      "output_video_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\output\\Group1_no_clone.mp4",
+      "reason": "lipsync disabled"
+    },
+    "output_video_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\output\\Group1_video_cloned.mp4",
+    "warnings": [
+      "phrase fuzzy-matched in ASR char stream: idx=0, phrase=家人们快看这葵瓜子香到离谱",
+      "phrase fuzzy-matched in ASR char stream: idx=1, phrase=越嗑越上头十包才十六块九",
+      "phrase fuzzy-matched in ASR char stream: idx=2, phrase=真的很给力赶紧下单带回家开嗑吧"
+    ]
+  },
+  "step4_video_inspection_agents": {
+    "B1_unimodal_extraction": {
+      "video_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\output\\Group1_video_cloned.mp4",
+      "text": "家人们快看，这葵瓜子香到离谱。越嗑越上头，十包才十六块九。真的很给力，赶紧下单带回家开嗑吧。",
+      "text_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\examples\\output_extracted_unimodal\\asr.txt",
+      "audio_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\examples\\output_extracted_unimodal\\audio.wav",
+      "image_path": [
+        "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\examples\\output_extracted_unimodal\\images\\frame_0.png",
+        "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\examples\\output_extracted_unimodal\\images\\frame_1.png",
+        "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\examples\\output_extracted_unimodal\\images\\frame_2.png"
+      ],
+      "meta": {
+        "asr_method": "gemini",
+        "audio_method": "moviepy_ffmpeg",
+        "image_method": "moviepy",
+        "asr_audio_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\examples\\output_extracted_unimodal\\audio.wav"
+      },
+      "brand_personality": "excitement"
+    },
+    "B2_theory_driven_detection": {
+      "text": {
+        "modality": "text",
+        "text": "家人们快看，这葵瓜子香到离谱。越嗑越上头，十包才十六块九。真的很给力，赶紧下单带回家开嗑吧。",
+        "detedction_task": "excitement score",
+        "score": 0.0,
+        "reason": ""
+      },
+      "audio": {
+        "modality": "audio",
+        "audio_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\examples\\output_extracted_unimodal\\audio.wav",
+        "detedction_task": "excitement  score",
+        "score": 0.0,
+        "reason": ""
+      },
+      "images": {
+        "modality": "images",
+        "detedction_task": "excitement score",
+        "details": {
+          "final_score": 0.0,
+          "mean_score": 0.0,
+          "distribution": {
+            "high": 0,
+            "low": 3
+          },
+          "total_images": 3,
+          "individual_results": [
+            {
+              "item_scores": {
+                "up_to_date": 8,
+                "imaginative": 5,
+                "spirited": 6,
+                "daring": 8
+              },
+              "excitement_score": 6.75,
+              "excitement_classification": "high",
+              "score": 0.0,
+              "label": "low",
+              "confidence": 1.0,
+              "image_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\examples\\output_extracted_unimodal\\images\\frame_0.png"
+            },
+            {
+              "item_scores": {
+                "up_to_date": 5,
+                "imaginative": 6,
+                "spirited": 4,
+                "daring": 8
+              },
+              "excitement_score": 5.75,
+              "excitement_classification": "high",
+              "score": 0.0,
+              "label": "low",
+              "confidence": 1.0,
+              "image_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\examples\\output_extracted_unimodal\\images\\frame_1.png"
+            },
+            {
+              "item_scores": {
+                "up_to_date": 6,
+                "imaginative": 4,
+                "spirited": 8,
+                "daring": 5
+              },
+              "excitement_score": 5.75,
+              "excitement_classification": "high",
+              "score": 0.0,
+              "label": "low",
+              "confidence": 1.0,
+              "image_path": "C:\\Users\\ASUS\\Desktop\\mulit-agent260213\\examples\\output_extracted_unimodal\\images\\frame_2.png"
+            }
+          ]
+        }
+      }
+    },
+    "B3_data_driven_detection": {
+      "b3_image_bind": {
+        "semantic_similarity_mean": 0.5962,
+        "method": "mmml_modules/imagebind",
+        "semantic_similarity1_text_audio": 0.5387,
+        "semantic_similarity2_text_image_mean": 0.6165,
+        "semantic_similarity2_text_image_list": [
+          0.6181,
+          0.6166,
+          0.615
+        ],
+        "semantic_similarity3_audio_image_mean": 0.6333,
+        "semantic_similarity3_audio_image_list": [
+          0.6331,
+          0.6391,
+          0.6276
+        ],
+        "error_message": "no error"
+      }
+    },
+    "B4_congruence_evaluation": {
+      "Step4_theory_congruence": {
+        "is_congruence": true,
+        "method": "pstdev",
+        "congruence_score": 1.0,
+        "details": {
+          "stddev": 0.0,
+          "threshold": 0.35,
+          "congruence_score": 1.0,
+          "unimodal_score": {
+            "text": 0.0,
+            "audio": 0.0,
+            "image": 0.0,
+            "image_mean_score": 0.0
+          }
+        }
+      },
+      "Step4_data_congruence": {
+        "imagebind": {
+          "score": 0.5962,
+          "method": "mmml_modules/imagebind",
+          "individual_scores": [
+            0.6331,
+            0.6391,
+            0.6276
+          ],
+          "error_message": "no error",
+          "details": {
+            "text_audio_similarity": 0.5387,
+            "text_audio_mean": 0.6165,
+            "text_audio_list": [
+              0.6181,
+              0.6166,
+              0.615
+            ],
+            "text_image_mean": 0.6333
+          }
+        }
+      },
+      "final": {
+        "is_congruence": true,
+        "reason": "pass congruence detection"
+      }
+    }
+  }
+}
