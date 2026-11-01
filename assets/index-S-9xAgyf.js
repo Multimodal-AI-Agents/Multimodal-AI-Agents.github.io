@@ -42546,7 +42546,7 @@ function lJ() {
             R.jsx("p", {
               className: "text-xs text-slate-500",
               children:
-                "Beyond the Foundation Model: Marketing-Aligned Generative AI for Videos",
+                "",
             }),
             
           ],
@@ -42558,6 +42558,7 @@ function lJ() {
 Ek.createRoot(document.getElementById("root")).render(
   R.jsx(O.StrictMode, { children: R.jsx(lJ, {}) }),
 );
+
 
 
 
