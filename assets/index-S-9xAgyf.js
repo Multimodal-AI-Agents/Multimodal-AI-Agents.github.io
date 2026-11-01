@@ -41705,7 +41705,7 @@ function lJ() {
               R.jsx("p", {
                 className: "text-slate-300 text-xl leading-relaxed",
                 children:
-                  "The proposed marketing-aligned multimodal orchestration system for brand personality video generation (e.g., high excitement) includes four modules: unimodal inputs, input detection agents, a video generation agent, and video inspection agents.",
+                  [R.jsx("span",{className:"hero-introduction",children:"The proposed marketing-aligned multimodal orchestration system for brand personality video generation (e.g., high excitement) includes four modules:"}),R.jsx("span",{className:"hero-modules",children:["Unimodal inputs","Input detection agents","Video generation agent","Video inspection agents"].map((label,i)=>R.jsx("span",{className:"hero-module",children:label},i))})],
               }),
             ],
           }),
