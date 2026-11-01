@@ -1,0 +1,49 @@
+html{scroll-behavior:smooth}section[id]{scroll-margin-top:100px}.research-section{margin-bottom:48px}.research-section h2,.process-title{font-size:26px;font-weight:700;color:#0f172a;margin-bottom:24px;line-height:1.35}.architecture{background:white;border:1px solid #e2e8f0;border-radius:12px;padding:20px}.architecture img{display:block;width:100%;height:auto}.architecture figcaption{font-size:13px;color:#64748b;text-align:center;margin-top:14px}.study-section{margin-top:28px;padding:24px;background:white;border:1px solid #e2e8f0;border-radius:12px}.study-section h3{font-size:21px;font-weight:700;margin-bottom:20px}.stimulus-group+.stimulus-group{margin-top:28px;border-top:1px solid #e2e8f0;padding-top:24px}.group-label{font-size:17px;font-weight:600;margin-bottom:14px}.stimulus-pair{display:grid;grid-template-columns:1fr 1fr;gap:24px}.stimulus-player h4{font-size:14px;font-weight:600;color:#475569;margin-bottom:10px}.stimulus-player video{width:100%;max-height:560px;background:#0f172a;border-radius:8px;display:block}.video-unavailable{aspect-ratio:16/9;background:#f1f5f9;border:1px dashed #cbd5e1;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#64748b;font-size:14px}nav>div{gap:16px}nav>div>div:first-child{flex-wrap:wrap;gap:12px 20px!important}nav>div>div:last-child{display:none}@media(max-width:640px){.stimulus-pair{grid-template-columns:1fr}.study-section{padding:16px}.architecture{padding:8px}.research-section h2,.process-title{font-size:22px}nav a{font-size:12px!important}}
+.stimulus-player iframe{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:8px;background:#0f172a}.example-notice{color:#64748b;font-size:14px;line-height:1.7;margin-bottom:20px}
+.study-description{font-size:14px;line-height:1.7;color:#64748b;margin-bottom:24px}
+/* Compact generation process; primary section headings retain their size. */
+:is(#section-1,#section-2,#section-3,#section-4){margin-bottom:26px}
+:is(#section-1,#section-2,#section-3,#section-4)>.flex{margin-bottom:12px;gap:10px}
+:is(#section-1,#section-2,#section-3,#section-4)>.flex h3{font-size:18px}
+:is(#section-1,#section-2,#section-3,#section-4) .p-6{padding:18px}
+:is(#section-1,#section-2,#section-3,#section-4) .p-5{padding:14px}
+:is(#section-1,#section-2,#section-3,#section-4) .p-4{padding:12px}
+:is(#section-1,#section-2,#section-3,#section-4) .gap-6{gap:16px}
+:is(#section-1,#section-2,#section-3,#section-4) .space-y-5>:not([hidden])~:not([hidden]),:is(#section-1,#section-2,#section-3,#section-4) .space-y-6>:not([hidden])~:not([hidden]){margin-top:14px}
+:is(#section-1,#section-2,#section-3,#section-4) .text-sm{font-size:12px;line-height:1.6}
+:is(#section-1,#section-2,#section-3,#section-4) .text-base{font-size:14px}
+:is(#section-1,#section-2,#section-3,#section-4) .text-lg{font-size:16px}
+#section-1 img{max-height:270px;object-fit:contain}
+#section-3 .max-w-2xl{max-width:360px}
+#section-4 .w-32{width:96px}
+#section-4 .text-xl{font-size:18px}
+/* Further compact the process without affecting framework or study videos. */
+:is(#section-1,#section-2,#section-3,#section-4){max-width:900px;margin-left:auto;margin-right:auto;margin-bottom:20px}
+:is(#section-1,#section-2,#section-3,#section-4)>.flex h3{font-size:16px}
+:is(#section-1,#section-2,#section-3,#section-4)>.flex>div{width:40px;height:32px;font-size:13px}
+:is(#section-1,#section-2,#section-3,#section-4) .p-6{padding:12px}
+:is(#section-1,#section-2,#section-3,#section-4) .p-5{padding:10px}
+:is(#section-1,#section-2,#section-3,#section-4) .p-4{padding:9px}
+:is(#section-1,#section-2,#section-3,#section-4) .p-3{padding:8px}
+:is(#section-1,#section-2,#section-3,#section-4) .gap-6{gap:12px}
+:is(#section-1,#section-2,#section-3,#section-4) .mb-4{margin-bottom:10px}
+:is(#section-1,#section-2,#section-3,#section-4) .text-sm{font-size:11px;line-height:1.5}
+:is(#section-1,#section-2,#section-3,#section-4) .text-base{font-size:13px}
+:is(#section-1,#section-2,#section-3,#section-4) .text-lg{font-size:14px}
+:is(#section-1,#section-2,#section-3,#section-4) .space-y-4>:not([hidden])~:not([hidden]),:is(#section-1,#section-2,#section-3,#section-4) .space-y-5>:not([hidden])~:not([hidden]),:is(#section-1,#section-2,#section-3,#section-4) .space-y-6>:not([hidden])~:not([hidden]){margin-top:10px}
+#section-1 img{max-height:210px}
+#section-1 [style*="min-height"]{min-height:180px!important}
+#section-1 .gap-8{gap:14px}
+#section-2 .recharts-responsive-container{max-height:230px}
+#section-3 .max-w-2xl{max-width:280px}
+#section-4 .w-32{width:76px}
+@media print{nav{position:static!important}header{break-inside:avoid}.stimulus-group{break-inside:avoid;page-break-inside:avoid}.study-section{break-inside:auto}h2,h3,h4{break-after:avoid}#section-1 .lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))!important}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+/* Remove the outer framed panels below process step headings. */
+:is(#section-1,#section-2,#section-3,#section-4)>div:nth-child(2){border:0!important;box-shadow:none!important;background:transparent!important;border-radius:0!important}
+:is(#section-1,#section-2,#section-3,#section-4)>div:nth-child(2)>.p-6{padding-left:0;padding-right:0}
+/* Plain process numbers, without colored badges. */
+:is(#section-1,#section-2,#section-3,#section-4)>.flex>div:first-child{background:transparent!important;color:#0f172a!important;border:0!important;border-radius:0!important;box-shadow:none!important;width:auto!important;height:auto!important;font-family:inherit!important;font-size:16px!important;font-weight:700!important;padding:0!important}
+.process-step-number{background:none!important;color:#0f172a!important;border:none!important;border-radius:0!important;padding:0!important;width:auto!important;height:auto!important;font:700 16px/1.4 sans-serif!important}
+.project-code-links{display:flex;justify-content:center;padding:32px 24px 0}.project-code-links a{display:flex;flex-direction:column;align-items:center;gap:8px;color:#2563eb;text-decoration:none;font-size:16px}.project-code-links a:hover{color:#1e40af}.project-code-links a:focus-visible{outline:2px solid #2563eb;outline-offset:6px}
+
+.project-code-links{gap:64px;padding-top:36px;padding-bottom:8px}
