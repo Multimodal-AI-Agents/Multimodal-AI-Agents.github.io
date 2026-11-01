@@ -47,3 +47,39 @@ html{scroll-behavior:smooth}section[id]{scroll-margin-top:100px}.research-sectio
 .project-code-links{display:flex;justify-content:center;padding:32px 24px 0}.project-code-links a{display:flex;flex-direction:column;align-items:center;gap:8px;color:#2563eb;text-decoration:none;font-size:16px}.project-code-links a:hover{color:#1e40af}.project-code-links a:focus-visible{outline:2px solid #2563eb;outline-offset:6px}
 
 .project-code-links{gap:64px;padding-top:36px;padding-bottom:8px}
+/* Cover click-to-play for stimulus videos. Vertical 9:16 frame so the full cover is visible. */
+.cover-player{position:relative;aspect-ratio:9/16;border-radius:8px;overflow:hidden;background:#0f172a;cursor:pointer}
+.cover-player img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.cover-player::after{content:'';position:absolute;inset:0;background:rgba(15,23,42,0);transition:background .2s;pointer-events:none}
+.cover-player:hover::after,.cover-player:focus-visible::after{background:rgba(15,23,42,.25)}
+/* Once the player is loaded, the overlay must not sit above the iframe or it swallows play/pause clicks. */
+.cover-player:has(iframe)::after{display:none}
+.cover-player:has(iframe){cursor:default}
+.cover-player .cover-play-button{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:rgba(15,23,42,.75);color:#fff;font-size:24px;display:flex;align-items:center;justify-content:center;padding-left:6px;box-shadow:0 4px 16px rgba(0,0,0,.35);transition:transform .2s,background .2s;z-index:1}
+.cover-player:hover .cover-play-button{transform:translate(-50%,-50%) scale(1.08);background:rgba(220,38,38,.9)}
+.cover-player iframe{display:block;width:100%;height:100%;border:0}
+/* Portrait (9:16) presentation: cap the width so each card stays a reasonable height and center it. */
+.cover-player{max-width:300px;margin:0 auto}
+.stimulus-pair{grid-template-columns:repeat(2,minmax(0,300px));justify-content:center;align-items:start;gap:20px 32px}
+.stimulus-player{width:100%;max-width:300px;display:flex;flex-direction:column}
+.stimulus-player h4{text-align:center}
+@media(max-width:640px){.stimulus-pair{grid-template-columns:minmax(0,1fr);gap:20px}.cover-player,.stimulus-player{max-width:260px}}
+/* Align the study cards in section 3 with the 900px process column used by sections 2.1-2.4. */
+#experimental-stimuli .study-section{max-width:900px;margin-left:auto;margin-right:auto}
+/* Unified heading scale: H2 26px / section H3 20px, consistent spacing. */
+.research-section h2{font-size:26px;line-height:1.35;margin-bottom:24px}
+:is(#section-1,#section-2,#section-3,#section-4)>.flex h3{font-size:20px!important;line-height:1.4}
+:is(#section-1,#section-2,#section-3,#section-4)>.flex{margin-bottom:20px}
+:is(#section-1,#section-2,#section-3,#section-4)>.flex>div:first-child{font-size:20px!important;line-height:1.4!important}
+.process-step-number{font-size:20px!important;line-height:1.4!important}
+.study-section h3{font-size:20px!important;line-height:1.4;margin-bottom:20px}
+@media(max-width:640px){.research-section h2,.process-title{font-size:22px}:is(#section-1,#section-2,#section-3,#section-4)>.flex h3,.study-section h3{font-size:18px!important}:is(#section-1,#section-2,#section-3,#section-4)>.flex>div:first-child,.process-step-number{font-size:18px!important}}
+/* Body text scale in section 2 now matches section 3 (14px body), instead of the old 11px compaction. */
+:is(#section-1,#section-2,#section-3,#section-4) .text-sm{font-size:14px!important;line-height:1.65!important}
+:is(#section-1,#section-2,#section-3,#section-4) .text-xs{font-size:13px!important;line-height:1.55!important}
+:is(#section-1,#section-2,#section-3,#section-4) .text-base{font-size:15px!important;line-height:1.6!important}
+:is(#section-1,#section-2,#section-3,#section-4) .text-lg{font-size:15px!important;line-height:1.5!important}
+:is(#section-1,#section-2,#section-3,#section-4) h3.text-sm,:is(#section-1,#section-2,#section-3,#section-4) h4.text-sm{font-size:14px!important}
+@media(max-width:640px){:is(#section-1,#section-2,#section-3,#section-4) .text-sm{font-size:13px!important}:is(#section-1,#section-2,#section-3,#section-4) .text-xs{font-size:12px!important}}
+/* Tiny caption labels (e.g. "Congruence Result" above PASS) were 10px; lift to the 13px label size. */
+:is(#section-1,#section-2,#section-3,#section-4) .text-\[10px\]{font-size:13px!important;letter-spacing:.06em!important}

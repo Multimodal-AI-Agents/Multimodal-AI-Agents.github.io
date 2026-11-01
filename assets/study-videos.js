@@ -1,4 +1,4 @@
-import {videoLinks} from './video-links-20261101.js';
+import {videoLinks} from './video-links-20261101.js?v=20261102-study3-g1-en';
 // Temporary video from the supplied upload guide; replace en and zh independently.
 const example = ''; 
 // Input levels are ordered as text, audio, image.
@@ -14,12 +14,26 @@ const conditions = [
   ['Gemini', 'Low / Low / Low'],
   ['Human', 'Low / Low / Low']
 ];
+// Displayed condition lists the three input levels; the cover follows the Image level of that same row,
+// so the photographed stimulus always matches what the label says.
+// Studies 1-2 are labelled Group 01-09 in display order, while the YouTube link keys remain 1 and 9-16.
+const excitementKeys = [1, 9, 10, 11, 12, 13, 14, 15, 16];
+const modalities = ['Text', 'Audio', 'Image'];
+const levelText = levels => levels.split(' / ').map((level,i)=>`${level} ${modalities[i]}`).join(' / ');
 function groups(count, excitement = false) {
-  return conditions.slice(0,count).map(([source,levels],index)=>({
-    label:`Group ${String(excitement && index > 0 ? index + 8 : index + 1).padStart(2,"0")} · ${source} · ${levels.split(" / ").map((level,i)=>level+" "+["Text","Audio","Image"][i]).join(" / ")}`,
-    en:example,
-    zh:example
-  }));
+  const dimension = excitement ? 'excitement' : 'ruggedness';
+  return conditions.slice(0,count).map(([source,levels],index)=>{
+    const key = excitement ? excitementKeys[index] : index + 1;
+    const imageLevel = levels.split(' / ')[2];
+    const ext = dimension === 'excitement' && imageLevel === 'High' ? 'jpg' : 'png';
+    return {
+      label:`Group ${String(index + 1).padStart(2,"0")} · ${source} · ${levelText(levels)}`,
+      key,
+      cover:`./assets/covers/${dimension}-${imageLevel.toLowerCase()}.${ext}?v=20261102-covers`,
+      en:example,
+      zh:example
+    };
+  });
 }
 export const studies = [
   {id:'study-1', title:'3.1 Study 1: Preregistered Online Experiment', description:'Text, audio, and image inputs each have two levels: high and low brand excitement.', groups:groups(9,true)},
@@ -27,16 +41,11 @@ export const studies = [
   {id:'study-3', title:'3.3 Study 3: Generalized Online Experiment', description:'Text, audio, and image inputs each have two levels: high and low brand ruggedness.', groups:groups(10)}
 ];
 
-
-
-
-
 for (const study of studies) {
  const id=study.id.split("-")[1];
  for (const group of study.groups) {
-  const number=Number(group.label.match(/Group (\d+)/)[1]);
-  group.en=videoLinks[`${id}-${number}-EN`];
-  group.zh=videoLinks[`${id}-${number}-CN`];
-  if (!group.en || !group.zh) throw new Error("Missing study video");
+  group.en=videoLinks[`${id}-${group.key}-EN`];
+  group.zh=videoLinks[`${id}-${group.key}-CN`];
+  if (!group.en || !group.zh) throw new Error("Missing study video: "+id+"-"+group.key);
  }
 }

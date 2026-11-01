@@ -1,4 +1,4 @@
-import {createResearchSections} from "./research-sections.js?v=20261101-new-figure-12";
+import {createResearchSections} from "./research-sections.js?v=20261102-cover-image-level";
 var hk = Object.defineProperty;
 var mk = (e, t, n) =>
   t in e
@@ -41575,7 +41575,7 @@ function Rs(...e) {
 }
 const tt = {
     step1: {
-      text: "Hey everyone! Look at these sunflower seeds I'm holding! The kernels are extra large. Grab a handful and see how plump each one is. Every bite will have you hooked. Ten bags for just 6.90 yuan. Get yours now!",
+      text: "Hey everyone! Look at these sunflower seeds I'm holding! The kernels are extra large. Grab a handful and see how plump each one is. Every bite will have you hooked. Ten bags for just 16.90 yuan. Get yours now!",
       audio_src: "./doc/Group1.wav?v=20261009-1102",
       image_src: "./doc/Group1.jpg",
     },
@@ -41605,7 +41605,7 @@ const tt = {
     },
     step4: {
       asr_text:
-        "Hey everyone! Look at these sunflower seeds I'm holding! The kernels are extra large. Grab a handful and see how plump each one is. Every bite will have you hooked. Ten bags for just 6.90 yuan. Get yours now!",
+        "Hey everyone! Look at these sunflower seeds I'm holding! The kernels are extra large. Grab a handful and see how plump each one is. Every bite will have you hooked. Ten bags for just 16.90 yuan. Get yours now!",
       video_frames: [
         "./doc/frames/online-group1-frame-1.jpg",
         "./doc/frames/online-group1-frame-2.jpg",
@@ -41617,15 +41617,15 @@ const tt = {
         "./doc/frames/online-group1-frame-8.jpg",
       ],
       scores: {
-        b2_text: "5.750",
-        b2_audio: "8.750",
-        b2_image: "6.469",
-        personality_congruence: "0.699",
+        b2_text: "6.750",
+        b2_audio: "8.000",
+        b2_image: "6.906",
+        personality_congruence: "0.869",
         b3_image_bind: {
-          semantic_similarity_mean: "0.573",
-          semantic_similarity_text_audio: "0.554",
-          semantic_similarity_text_image: "0.577",
-          semantic_similarity_audio_image: "0.588",
+          semantic_similarity_mean: "0.574",
+          semantic_similarity_text_audio: "0.581",
+          semantic_similarity_text_image: "0.580",
+          semantic_similarity_audio_image: "0.562",
         },
         b4_theory: "Congruence",
         b4_data: "Congruence",
