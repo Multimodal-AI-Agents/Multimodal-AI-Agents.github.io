@@ -1,4 +1,4 @@
-import {createResearchSections} from "./research-sections.js?v=20261102-cover-image-level";
+import {createResearchSections} from "./research-sections.js?v=20261101-no-figure-caption";
 var hk = Object.defineProperty;
 var mk = (e, t, n) =>
   t in e
@@ -42558,6 +42558,7 @@ function lJ() {
 Ek.createRoot(document.getElementById("root")).render(
   R.jsx(O.StrictMode, { children: R.jsx(lJ, {}) }),
 );
+
 
 
 
