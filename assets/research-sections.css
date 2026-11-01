@@ -91,3 +91,7 @@ html{scroll-behavior:smooth}section[id]{scroll-margin-top:100px}.research-sectio
 .project-code-links a{gap:9px;font-size:16px}
 .project-code-links svg{width:52px;height:52px}
 @media(max-width:640px){#root>div>header{padding:38px 20px 16px!important}#root>div>header h1{font-size:27px!important;line-height:1.35!important}#root>div>header p{font-size:14px!important;line-height:1.75!important}.project-code-links{padding-bottom:26px!important}}
+
+/* Unified typography across the entire project page. */
+html,body,#root,#root *,#root *::before,#root *::after{font-family:'Times New Roman',Times,serif!important}
+
