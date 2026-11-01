@@ -95,3 +95,6 @@ html{scroll-behavior:smooth}section[id]{scroll-margin-top:100px}.research-sectio
 /* Unified typography across the entire project page. */
 html,body,#root,#root *,#root *::before,#root *::after{font-family:'Times New Roman',Times,serif!important}
 
+
+#root>div>header h1{text-wrap:balance;word-break:normal;overflow-wrap:normal}#root>div>header p{text-wrap:pretty}@media(max-width:640px){.title-line-break{display:none}}
+

@@ -41700,7 +41700,7 @@ function lJ() {
               R.jsx("h1", {
                 className: "text-3xl font-bold tracking-tight sm:text-4xl",
                 children:
-                  "Beyond the Foundation Model: Marketing-Aligned Generative AI for Videos",
+                  ["Beyond the Foundation Model:", R.jsx("br", {className:"title-line-break"}), "Marketing-Aligned Generative AI for Videos"],
               }),
               R.jsx("p", {
                 className: "text-slate-300 text-xl leading-relaxed",
@@ -42558,6 +42558,7 @@ function lJ() {
 Ek.createRoot(document.getElementById("root")).render(
   R.jsx(O.StrictMode, { children: R.jsx(lJ, {}) }),
 );
+
 
 
 
