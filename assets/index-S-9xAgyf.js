@@ -41711,7 +41711,7 @@ function lJ() {
           }),
         }),
       }),
-      R.jsx("div", {className:"project-code-links", children:[R.jsxs("a", {href:"https://github.com/Multimodal-AI-Agents/Marketing-Aligned-Multimodal-Orchestration-System",target:"_blank",rel:"noopener noreferrer", "aria-label":"View project code on GitHub",children:[R.jsx("svg", {width:60,height:60,viewBox:"0 0 24 24","aria-hidden":true,children:R.jsx("path",{fill:"currentColor",d:"M12 .75a11.25 11.25 0 0 0-3.558 21.922c.563.103.768-.244.768-.542 0-.267-.01-.974-.015-1.912-3.13.68-3.79-1.508-3.79-1.508-.512-1.3-1.25-1.646-1.25-1.646-1.022-.7.078-.686.078-.686 1.13.08 1.725 1.16 1.725 1.16 1.005 1.724 2.637 1.226 3.28.938.102-.729.393-1.226.715-1.508-2.499-.285-5.126-1.25-5.126-5.564 0-1.23.44-2.235 1.16-3.022-.116-.285-.503-1.43.11-2.98 0 0 .945-.302 3.094 1.154A10.79 10.79 0 0 1 12 6.176c.956.004 1.92.13 2.82.38 2.148-1.456 3.092-1.154 3.092-1.154.614 1.55.227 2.695.112 2.98.72.787 1.158 1.792 1.158 3.022 0 4.326-2.63 5.276-5.136 5.554.404.35.764 1.04.764 2.096 0 1.513-.014 2.733-.014 3.105 0 .3.203.65.774.54A11.252 11.252 0 0 0 12 .75Z"})}),R.jsx("strong",{children:"Code"})]}) , R.jsxs("a", {href:"https://github.com/Multimodal-AI-Agents/Marketing-Aligned-Multimodal-Orchestration-System",target:"_blank",rel:"noopener noreferrer","aria-label":"View project data",children:[R.jsx("svg",{width:60,height:60,viewBox:"0 0 24 24","aria-hidden":true,children:R.jsx("path",{fill:"currentColor",d:"M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4M4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4m0 5v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4"})}),R.jsx("strong",{children:"Data"})]})]}),
+      R.jsx("div", {className:"project-code-links", children:[R.jsxs("a", {href:"https://github.com/Multimodal-AI-Agents/Marketing-Aligned-Multimodal-Orchestration-System",target:"_blank",rel:"noopener noreferrer", "aria-label":"View project code on GitHub",children:[R.jsx("svg", {width:60,height:60,viewBox:"0 0 24 24","aria-hidden":true,children:R.jsx("path",{fill:"currentColor",d:"M12 .75a11.25 11.25 0 0 0-3.558 21.922c.563.103.768-.244.768-.542 0-.267-.01-.974-.015-1.912-3.13.68-3.79-1.508-3.79-1.508-.512-1.3-1.25-1.646-1.25-1.646-1.022-.7.078-.686.078-.686 1.13.08 1.725 1.16 1.725 1.16 1.005 1.724 2.637 1.226 3.28.938.102-.729.393-1.226.715-1.508-2.499-.285-5.126-1.25-5.126-5.564 0-1.23.44-2.235 1.16-3.022-.116-.285-.503-1.43.11-2.98 0 0 .945-.302 3.094 1.154A10.79 10.79 0 0 1 12 6.176c.956.004 1.92.13 2.82.38 2.148-1.456 3.092-1.154 3.092-1.154.614 1.55.227 2.695.112 2.98.72.787 1.158 1.792 1.158 3.022 0 4.326-2.63 5.276-5.136 5.554.404.35.764 1.04.764 2.096 0 1.513-.014 2.733-.014 3.105 0 .3.203.65.774.54A11.252 11.252 0 0 0 12 .75Z"})}),R.jsx("strong",{children:"Code"})]})]}),
       R.jsxs("main", {
         className: "max-w-6xl mx-auto p-6 py-12",
         children: [
@@ -42558,6 +42558,7 @@ function lJ() {
 Ek.createRoot(document.getElementById("root")).render(
   R.jsx(O.StrictMode, { children: R.jsx(lJ, {}) }),
 );
+
 
 
 
