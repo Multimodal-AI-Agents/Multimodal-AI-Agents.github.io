@@ -3,7 +3,7 @@ import {videoLinks} from './video-links-20261101.js?v=20261102-study3-g1-en';
 const example = ''; 
 // Input levels are ordered as text, audio, image.
 const conditions = [
-  ['Agent (Marketing-aligned orchestration)', 'High / High / High'],
+  ['Agent', 'High / High / High'],
   ['Gemini', 'High / High / High'],
   ['Gemini', 'High / High / Low'],
   ['Gemini', 'High / Low / High'],
@@ -49,3 +49,4 @@ for (const study of studies) {
   if (!group.en || !group.zh) throw new Error("Missing study video: "+id+"-"+group.key);
  }
 }
+

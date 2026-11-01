@@ -1,4 +1,4 @@
-import {studies} from './study-videos.js?v=20261102-cover-image-level';
+import {studies} from './study-videos.js?v=20261101-agent-only';
 export function createResearchSections(R) {
   const h = (tag,props,...children)=>R.jsxs(tag,children.length?{...props,children}:{...props});
   function FigureOne(){return h('section',{id:'figure-1',className:'research-section'},
@@ -32,6 +32,7 @@ export function createResearchSections(R) {
       ...(study.groups.length?study.groups.map((group,i)=>h('article',{key:i,className:'stimulus-group'},h('h4',{className:'group-label'},group.label),h('div',{className:'stimulus-pair'},R.jsx(CoverPlayer,{src:group.en,cover:group.cover,language:'English version'}),R.jsx(CoverPlayer,{src:group.zh,cover:group.cover,language:'Chinese version'})))):[h('div',{className:'stimulus-pair',key:'pending'},R.jsx(Player,{language:'English version'}),R.jsx(Player,{language:'Chinese version'}))]))));}
   return {FigureOne,ExperimentVideos};
 }
+
 
 
 
