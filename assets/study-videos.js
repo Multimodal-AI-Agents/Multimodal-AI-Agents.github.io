@@ -16,7 +16,7 @@ const conditions = [
 ];
 // Displayed condition lists the three input levels; the cover follows the Image level of that same row,
 // so the photographed stimulus always matches what the label says.
-// Studies 1-2 are labelled Group 01-09 in display order, while the YouTube link keys remain 1 and 9-16.
+// Studies 1-2 are labelled Group 1-9 in display order, while the YouTube link keys remain 1 and 9-16.
 const excitementKeys = [1, 9, 10, 11, 12, 13, 14, 15, 16];
 const modalities = ['Text', 'Audio', 'Image'];
 const levelText = levels => levels.split(' / ').map((level,i)=>`${level} ${modalities[i]}`).join(' / ');
@@ -27,7 +27,7 @@ function groups(count, excitement = false) {
     const imageLevel = levels.split(' / ')[2];
     const ext = dimension === 'excitement' && imageLevel === 'High' ? 'jpg' : 'png';
     return {
-      label:`Group ${String(index + 1).padStart(2,"0")} · ${source} · ${levelText(levels)}`,
+      label:`Group ${index + 1} · ${source} · ${levelText(levels)}`,
       key,
       cover:`./assets/covers/${dimension}-${imageLevel.toLowerCase()}.${ext}?v=20261102-covers`,
       en:example,
@@ -49,4 +49,5 @@ for (const study of studies) {
   if (!group.en || !group.zh) throw new Error("Missing study video: "+id+"-"+group.key);
  }
 }
+
 

@@ -1,4 +1,4 @@
-import {createResearchSections} from "./research-sections.js?v=20261101-no-figure-caption";
+import {createResearchSections} from "./research-sections.js?v=20261106-group-weight";
 var hk = Object.defineProperty;
 var mk = (e, t, n) =>
   t in e
@@ -41622,10 +41622,10 @@ const tt = {
         b2_image: "6.906",
         personality_congruence: "0.869",
         b3_image_bind: {
-          semantic_similarity_mean: "0.574",
+          semantic_similarity_mean: "0.571",
           semantic_similarity_text_audio: "0.581",
           semantic_similarity_text_image: "0.580",
-          semantic_similarity_audio_image: "0.562",
+          semantic_similarity_audio_image: "0.551",
         },
         b4_theory: "Congruence",
         b4_data: "Congruence",
@@ -41854,7 +41854,7 @@ function lJ() {
                         "text-base font-semibold text-blue-900 mb-4 flex items-center gap-2",
                       children: [
                         R.jsx(Vi, { size: 14, className: "text-blue-900" }),
-                        "Theory-driven Detection",
+                        "Vertical Strategic Alignment with Brand Personality",
                       ],
                     }),
                     R.jsxs("div", {
@@ -41950,55 +41950,6 @@ function lJ() {
                             }),
                           ],
                         }),
-                        R.jsx("h4", {
-                          className: "text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3",
-                          children: "Brand Personality",
-                        }),
-                        R.jsxs("div", {
-                          className: "flex gap-6 items-center",
-                          children: [
-                            R.jsx("div", {
-                              className: "flex-1 h-80",
-                              children: R.jsx(hB, {
-                                width: "100%",
-                                height: "100%",
-                                children: R.jsxs(OY, {
-                                  cx: "50%",
-                                  cy: "50%",
-                                  outerRadius: "75%",
-                                  data: tt.step2.radar_data,
-                                  children: [
-                                    R.jsx(wP, { stroke: "#e2e8f0" }),
-                                    R.jsx(EP, { dataKey: "subject", tick: { fontSize: 10, fill: "#475569" } }),
-                                    R.jsx(TP, { angle: 90, domain: [0, 10], tick: { fontSize: 10, fill: "#94a3b8" } }),
-                                    R.jsx(fH, {
-                                      formatter: (h, m) => [h.toFixed(2), m],
-                                      labelFormatter: (h) => `${h}`,
-                                      contentStyle: { borderRadius: "8px", borderColor: "#e2e8f0", fontSize: "11px", padding: "8px" },
-                                    }),
-                                    R.jsx(Af, { name: "Text", dataKey: "text", stroke: "#2563eb", fill: "#2563eb", fillOpacity: 0.25, strokeWidth: 2 }),
-                                    R.jsx(Af, { name: "Audio", dataKey: "audio", stroke: "#059669", fill: "#059669", fillOpacity: 0.25, strokeWidth: 2 }),
-                                    R.jsx(Af, { name: "Image", dataKey: "image", stroke: "#d97706", fill: "#d97706", fillOpacity: 0.25, strokeWidth: 2 }),
-                                  ],
-                                }),
-                              }),
-                            }),
-                            R.jsx("div", {
-                              className: "flex flex-col gap-4",
-                              children: [
-                                ["Text", "bg-blue-600"],
-                                ["Audio", "bg-emerald-600"],
-                                ["Image", "bg-amber-600"],
-                              ].map(([label, color]) => R.jsxs("div", {
-                                className: "flex items-center gap-2",
-                                children: [
-                                  R.jsx("div", { className: `w-4 h-1 rounded ${color}` }),
-                                  R.jsx("span", { className: "text-xs text-slate-600", children: label }),
-                                ],
-                              }, label)),
-                            }),
-                          ],
-                        }),
                         R.jsxs("div", {
                           className: "space-y-8",
                           children: [
@@ -42014,29 +41965,21 @@ function lJ() {
                                       size: 16,
                                       className: "text-blue-600",
                                     }),
-                                    "Data-driven Detection",
+                                    "Horizontal Semantic Alignment across Modalities",
                                   ],
                                 }),
-                                R.jsxs("div", {
-                                  className: "grid grid-cols-2 gap-4",
+                                R.jsx("div", {
+                                  className: "detection-results",
                                   children: [
-                                    R.jsx(vr, {
-                                      label: R.jsx("span", {
-                                        className:
-                                          "text-xs text-black font-medium block mb-2",
-                                        children: "CLIP",
-                                      }),
-                                      value: tt.step2.metrics.clip,
-                                    }),
-                                    R.jsx(vr, {
-                                      label: R.jsx("span", {
-                                        className:
-                                          "text-xs text-black font-medium block mb-2",
-                                        children: "CLAP",
-                                      }),
-                                      value: tt.step2.metrics.clap,
-                                    }),
-                                  ],
+                                    ["CLIP", tt.step2.metrics.clip],
+                                    ["CLAP", tt.step2.metrics.clap],
+                                  ].map(([label, value]) => R.jsxs("div", {
+                                    className: "detection-result",
+                                    children: [
+                                      R.jsx("strong", {children: label}),
+                                      R.jsx("span", {children: value}),
+                                    ],
+                                  }, label)),
                                 }),
                               ],
                             }),
@@ -42065,7 +42008,7 @@ function lJ() {
                                         R.jsx("span", {
                                           className:
                                             "text-xs text-slate-500 font-medium",
-                                          children: "Theory Congruence",
+                                          children: "Vertical Strategic Alignment",
                                         }),
                                         R.jsx("span", {
                                           className:
@@ -42082,7 +42025,7 @@ function lJ() {
                                         R.jsx("span", {
                                           className:
                                             "text-xs text-slate-500 font-medium",
-                                          children: "Data Congruence",
+                                          children: "Horizontal Semantic Alignment",
                                         }),
                                         R.jsx("span", {
                                           className:
@@ -42298,7 +42241,7 @@ function lJ() {
                             R.jsx("h4", {
                               className:
                                 "text-sm font-semibold text-slate-900 mb-3",
-                              children: "Theory-driven Detection",
+                              children: "Vertical Strategic Alignment",
                             }),
                             R.jsx("div", {
                               className: "grid grid-cols-1 gap-2",
@@ -42307,7 +42250,7 @@ function lJ() {
                                   className:
                                     "text-xs text-black font-medium block mb-2",
                                   children: [
-                                    "Personality Congruence",
+                                    "Vertical Alignment Score",
                                   ],
                                 }),
                                 value: tt.step4.scores.personality_congruence,
@@ -42364,7 +42307,7 @@ function lJ() {
                             R.jsx("h4", {
                               className:
                                 "text-sm font-semibold text-slate-900 mb-3",
-                              children: "Data-driven Detection",
+                              children: "Horizontal Semantic Alignment",
                             }),
                             R.jsx("div", {
                               className: "grid grid-cols-1 gap-2",
@@ -42456,7 +42399,7 @@ function lJ() {
                           children: [
                             R.jsx("span", {
                               className: "text-xs text-slate-600",
-                              children: "Theory-driven Congruence",
+                              children: "Vertical Strategic Alignment",
                             }),
                             R.jsx("span", {
                               className:
@@ -42471,7 +42414,7 @@ function lJ() {
                           children: [
                             R.jsx("span", {
                               className: "text-xs text-slate-600",
-                              children: "Data-driven Congruence",
+                              children: "Horizontal Semantic Alignment",
                             }),
                             R.jsx("span", {
                               className:
@@ -42558,6 +42501,11 @@ function lJ() {
 Ek.createRoot(document.getElementById("root")).render(
   R.jsx(O.StrictMode, { children: R.jsx(lJ, {}) }),
 );
+
+
+
+
+
 
 
 
