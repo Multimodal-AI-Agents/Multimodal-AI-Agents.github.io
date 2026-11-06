@@ -1,4 +1,4 @@
-import {createResearchSections} from "./research-sections.js?v=20261106-group-weight";
+import {createResearchSections} from "./research-sections.js?v=20261106-video-migration";
 var hk = Object.defineProperty;
 var mk = (e, t, n) =>
   t in e
@@ -42478,6 +42478,7 @@ function lJ() {
 Ek.createRoot(document.getElementById("root")).render(
   R.jsx(O.StrictMode, { children: R.jsx(lJ, {}) }),
 );
+
 
 
 

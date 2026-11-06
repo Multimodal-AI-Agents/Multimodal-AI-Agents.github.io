@@ -1,4 +1,4 @@
-import {videoLinks} from './video-links-20261101.js?v=20261102-study3-g1-en';
+import {videoLinks} from './video-links-20261101.js?v=20261106-video-migration';
 // Temporary video from the supplied upload guide; replace en and zh independently.
 const example = ''; 
 // Input levels are ordered as text, audio, image.
@@ -49,5 +49,6 @@ for (const study of studies) {
   if (!group.en || !group.zh) throw new Error("Missing study video: "+id+"-"+group.key);
  }
 }
+
 
 
