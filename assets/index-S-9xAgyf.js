@@ -41845,7 +41845,7 @@ function lJ() {
             children: R.jsx("div", {
               className: "p-6",
               children: R.jsx("div", {
-                className: "space-y-6",
+                className: "detection-layout",
                 children: R.jsxs("div", {
                   className: "p-5 bg-white border border-slate-200 rounded-lg",
                   children: [
@@ -41884,7 +41884,7 @@ function lJ() {
                                         }),
                                         R.jsx("th", {
                                           className: "px-4 py-2",
-                                          children: "Excitement Label",
+                                          children: "Excitement Classification",
                                         }),
                                       ],
                                     }),
@@ -41951,7 +41951,7 @@ function lJ() {
                           ],
                         }),
                         R.jsxs("div", {
-                          className: "space-y-8",
+                          className: "detection-secondary",
                           children: [
                             R.jsxs("div", {
                               className:
@@ -41999,7 +41999,7 @@ function lJ() {
                                   ],
                                 }),
                                 R.jsxs("div", {
-                                  className: "space-y-3",
+                                  className: "detection-summary",
                                   children: [
                                     R.jsxs("div", {
                                       className:
@@ -42501,6 +42501,8 @@ function lJ() {
 Ek.createRoot(document.getElementById("root")).render(
   R.jsx(O.StrictMode, { children: R.jsx(lJ, {}) }),
 );
+
+
 
 
 
