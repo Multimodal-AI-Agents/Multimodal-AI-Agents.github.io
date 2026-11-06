@@ -41595,8 +41595,8 @@ const tt = {
       metrics: {
         clip: "High",
         clap: "High",
-        theory_congruence: "Congruence",
-        data_congruence: "Congruence",
+        theory_congruence: "CONGRUENCE",
+        data_congruence: "CONGRUENCE",
       },
     },
     step3: {
@@ -41627,8 +41627,8 @@ const tt = {
           semantic_similarity_text_image: "0.580",
           semantic_similarity_audio_image: "0.551",
         },
-        b4_theory: "Congruence",
-        b4_data: "Congruence",
+        b4_theory: "CONGRUENCE",
+        b4_data: "CONGRUENCE",
       },
     },
   },
@@ -41788,7 +41788,7 @@ function lJ() {
                               "div",
                               {
                                 className:
-                                  "w-3 bg-gradient-to-t from-emerald-500 to-emerald-300 rounded-full transition-all",
+                                  "w-3 input-audio-wave-bar rounded-full",
                                 style: { height: `${h * 100}%` },
                               },
                               m,
@@ -41862,11 +41862,7 @@ function lJ() {
                       children: [
                         R.jsxs("div", {
                           children: [
-                            R.jsx("h4", {
-                              className:
-                                "text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3",
-                              children: "Excitement",
-                            }),
+
                             R.jsx("div", {
                               className:
                                 "overflow-hidden border border-slate-200 rounded-lg",
@@ -42036,28 +42032,9 @@ function lJ() {
                                       ],
                                     }),
                                     R.jsxs("div", {
-                                      className:
-                                        "flex items-center justify-between p-4 bg-emerald-50/30 rounded-2xl text-slate-800 shadow-lg",
                                       children: [
-                                        R.jsxs("div", {
-                                          children: [
-                                            R.jsx("span", {
-                                              className:
-                                                "text-[10px] font-mono text-slate-500 uppercase tracking-widest block mb-1",
-                                              children: "Congruence Result",
-                                            }),
-                                            R.jsx("span", {
-                                              className:
-                                                "text-xl font-black tracking-tighter",
-                                              children: "PASS",
-                                            }),
-                                          ],
-                                        }),
-                                        R.jsx("div", {
-                                          className:
-                                            "w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600",
-                                          children: R.jsx(MA, { size: 24 }),
-                                        }),
+                                        R.jsx("span", { children: "Congruence Result" }),
+                                        R.jsx("strong", { children: "PASS" }),
                                       ],
                                     }),
                                   ],
@@ -42501,6 +42478,8 @@ function lJ() {
 Ek.createRoot(document.getElementById("root")).render(
   R.jsx(O.StrictMode, { children: R.jsx(lJ, {}) }),
 );
+
+
 
 
 

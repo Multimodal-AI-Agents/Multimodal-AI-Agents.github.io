@@ -128,3 +128,20 @@ html,body,#root,#root *,#root *::before,#root *::after{font-family:'Times New Ro
 #section-2 .detection-summary>div:last-child span{margin:0;font-size:13px}
 #section-2 .detection-secondary>div:last-child>div{padding:0!important;background:none;border:0}
 @media(max-width:760px){#section-2 .detection-layout .space-y-6{grid-template-columns:minmax(0,1fr)}}
+
+/* Equal-height checks and three aligned result rows. */
+#section-1 .input-audio-wave-bar{background:#666}
+#section-2 .detection-layout .space-y-6{align-items:stretch}
+#section-2 .detection-summary{display:grid;gap:6px}
+#section-2 .detection-summary>div{display:flex;align-items:center;justify-content:space-between;background:#f5f5f5;border:1px solid #e2e2e2;color:#000}
+#section-2 .detection-summary>div>span{color:#000;letter-spacing:normal}
+
+#section-2 .detection-results{display:grid;grid-template-columns:minmax(0,1fr);gap:6px}#section-2 .detection-result{justify-content:space-between}
+
+.page-contents{position:fixed;top:12px;left:12px;z-index:50;max-width:calc(100vw - 24px);color:#000;background:#fff;border:1px solid #d4d4d4;border-radius:8px;font:16px/1.4 "Times New Roman",Times,serif}
+.page-contents summary{padding:7px 12px;cursor:pointer;font-weight:bold}
+.page-contents nav{padding:0 8px 8px;max-height:70vh;overflow:auto}
+.page-contents a{display:block;padding:5px 8px;color:#000;text-decoration:none}
+.page-contents a:hover,.page-contents a:focus-visible{background:#f0f0f0;text-decoration:underline}
+.page-contents a.contents-sub{padding-left:24px}
+@media print{.page-contents{display:none}}
