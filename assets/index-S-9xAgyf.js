@@ -1,4 +1,4 @@
-import {createResearchSections} from "./research-sections.js?v=20261106-video-migration";
+import {createResearchSections} from "./research-sections.js?v=20261107-figure1-similarity";
 var hk = Object.defineProperty;
 var mk = (e, t, n) =>
   t in e
@@ -41575,7 +41575,7 @@ function Rs(...e) {
 }
 const tt = {
     step1: {
-      text: "Hey everyone! Look at these sunflower seeds I'm holding! The kernels are extra large. Grab a handful and see how plump each one is. Every bite will have you hooked. Ten bags for just 16.90 yuan. Get yours now!",
+      text: "Hello everyone! look at these sunflower seeds in my hand, the kernels are incredibly huge. Grab a handful, every seed is plump and every bite is absolutely addictive. Ten packs for only 16.9 yuan, get yours now!",
       audio_src: "./doc/Group1.wav?v=20261009-1102",
       image_src: "./doc/Group1.jpg",
     },
@@ -41622,7 +41622,6 @@ const tt = {
         b2_image: "6.906",
         personality_congruence: "0.869",
         b3_image_bind: {
-          semantic_similarity_mean: "0.571",
           semantic_similarity_text_audio: "0.581",
           semantic_similarity_text_image: "0.580",
           semantic_similarity_audio_image: "0.551",
@@ -42173,12 +42172,12 @@ function lJ() {
                                   "div",
                                   {
                                     className:
-                                      "shrink-0 w-32 rounded overflow-hidden border border-slate-200 bg-white",
+                                      "inspection-frame shrink-0 rounded overflow-hidden border border-slate-200 bg-white",
                                     children: [
                                       R.jsx("img", {
                                         src: h,
                                         alt: `Frame ${m + 1}`,
-                                        className: "w-full h-auto object-cover",
+                                        className: "inspection-frame-image",
                                       }),
                                       R.jsxs("span", {
                                         className:
@@ -42286,19 +42285,6 @@ function lJ() {
                                 "text-sm font-semibold text-slate-900 mb-3",
                               children: "Horizontal Semantic Alignment",
                             }),
-                            R.jsx("div", {
-                              className: "grid grid-cols-1 gap-2",
-                              children: R.jsx(vr, {
-                                label: R.jsx("span", {
-                                  className:
-                                    "text-xs text-black font-medium block mb-2",
-                                  children: "Semantic Similarity (Mean)",
-                                }),
-                                value:
-                                  tt.step4.scores.b3_image_bind
-                                    .semantic_similarity_mean,
-                              }),
-                            }),
                             R.jsxs("div", {
                               className:
                                 "grid grid-cols-1 sm:grid-cols-3 gap-2 mt-3",
@@ -42308,7 +42294,7 @@ function lJ() {
                                     className:
                                       "text-xs text-slate-400 font-normal block mb-2",
                                     children:
-                                      "Semantic Similarity (Text & Audio)",
+                                      "Semantic Similarity (Text - Audio)",
                                   }),
                                   value: R.jsx("span", {
                                     className:
@@ -42323,7 +42309,7 @@ function lJ() {
                                     className:
                                       "text-xs text-slate-400 font-normal block mb-2",
                                     children:
-                                      "Semantic Similarity (Text & Image)",
+                                      "Semantic Similarity (Text - Image)",
                                   }),
                                   value: R.jsx("span", {
                                     className:
@@ -42338,7 +42324,7 @@ function lJ() {
                                     className:
                                       "text-xs text-slate-400 font-normal block mb-2",
                                     children:
-                                      "Semantic Similarity (Audio & Image)",
+                                      "Semantic Similarity (Audio - Image)",
                                   }),
                                   value: R.jsx("span", {
                                     className:

@@ -4,7 +4,7 @@ export function createResearchSections(R) {
   function FigureOne(){return h('section',{id:'figure-1',className:'research-section'},
     h('h2',{},'1. Marketing-Aligned Multimodal Orchestration System'),
     
-    h('figure',{className:'architecture'},h('a',{href:'./assets/figure1.png?v=20261106-local',target:'_blank',rel:'noopener', 'aria-label':'Open Figure 1 at full size'},h('img',{src:'./assets/figure1.png?v=20261106-local',alt:'Marketing objective, unimodal inputs, alignment screening, video generation, inspection and correction, downstream tasks, and task objectives.'}))));
+    h('figure',{className:'architecture'},h('a',{href:'./assets/figure1-20261107.jpg',target:'_blank',rel:'noopener', 'aria-label':'Open Figure 1 at full size'},h('img',{src:'./assets/figure1-20261107.jpg',alt:'Marketing objective, unimodal inputs, alignment screening, video generation, inspection and correction, downstream tasks, and task objectives.'}))));
   }
   function Player({src,language}){return h('div',{className:'stimulus-player'},h('h4',{},language),src&&src.startsWith('https://www.youtube.com/embed/')?h('iframe',{src,title:language+' experimental stimulus',loading:'lazy',allow:'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share',referrerPolicy:'strict-origin-when-cross-origin',allowFullScreen:true}):src?h('video',{controls:true,preload:'none',playsInline:true,src,'aria-label':language+' experimental stimulus'}):h('div',{className:'video-unavailable'},'Video not yet available'))}
   function CoverPlayer({src,cover,language}){
