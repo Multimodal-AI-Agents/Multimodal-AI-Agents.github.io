@@ -41990,7 +41990,7 @@ function lJ() {
                                       size: 16,
                                       className: "text-blue-600",
                                     }),
-                                    "Congruence Evaluation",
+                                    "Alignment Evaluation",
                                   ],
                                 }),
                                 R.jsxs("div", {
@@ -42350,7 +42350,7 @@ function lJ() {
                         "text-base font-semibold text-blue-900 mb-4 flex items-center gap-2",
                       children: [
                         R.jsx(Vi, { size: 14, className: "text-blue-600" }),
-                        "Congruence Evaluation",
+                        "Alignment Evaluation",
                       ],
                     }),
                     R.jsxs("div", {
