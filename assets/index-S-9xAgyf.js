@@ -41576,8 +41576,8 @@ function Rs(...e) {
 const tt = {
     step1: {
       text: "Hello everyone! look at these sunflower seeds in my hand, the kernels are incredibly huge. Grab a handful, every seed is plump and every bite is absolutely addictive. Ten packs for only 16.9 yuan, get yours now!",
-      audio_src: "./doc/Group1.wav?v=20261009-1102",
-      image_src: "./doc/Group1.jpg",
+      audio_src: "./doc/Group1.wav?v=20261107-media-refresh",
+      image_src: "./doc/Group1.jpg?v=20261107-media-refresh",
     },
     step2: {
       a1_table: [
@@ -41601,20 +41601,20 @@ const tt = {
     },
     step3: {
       video_src_en: "./doc/online-group1.mp4",
-      cloned_audio_src: "./doc/online-group1-extracted-8s.wav",
+      cloned_audio_src: "./doc/online-group1-extracted-8s.wav?v=20261107-media-refresh",
     },
     step4: {
       asr_text:
         "Hey everyone! Look at these sunflower seeds I'm holding! The kernels are extra large. Grab a handful and see how plump each one is. Every bite will have you hooked. Ten bags for just 16.90 yuan. Get yours now!",
       video_frames: [
-        "./doc/frames/online-group1-frame-1.jpg",
-        "./doc/frames/online-group1-frame-2.jpg",
-        "./doc/frames/online-group1-frame-3.jpg",
-        "./doc/frames/online-group1-frame-4.jpg",
-        "./doc/frames/online-group1-frame-5.jpg",
-        "./doc/frames/online-group1-frame-6.jpg",
-        "./doc/frames/online-group1-frame-7.jpg",
-        "./doc/frames/online-group1-frame-8.jpg",
+        "./doc/frames/online-group1-frame-1.jpg?v=20261107-media-refresh",
+        "./doc/frames/online-group1-frame-2.jpg?v=20261107-media-refresh",
+        "./doc/frames/online-group1-frame-3.jpg?v=20261107-media-refresh",
+        "./doc/frames/online-group1-frame-4.jpg?v=20261107-media-refresh",
+        "./doc/frames/online-group1-frame-5.jpg?v=20261107-media-refresh",
+        "./doc/frames/online-group1-frame-6.jpg?v=20261107-media-refresh",
+        "./doc/frames/online-group1-frame-7.jpg?v=20261107-media-refresh",
+        "./doc/frames/online-group1-frame-8.jpg?v=20261107-media-refresh",
       ],
       scores: {
         b2_text: "6.750",
@@ -41710,7 +41710,7 @@ function lJ() {
           }),
         }),
       }),
-      R.jsx("div", {className:"project-code-links", children:[R.jsxs("a", {href:"https://github.com/Multimodal-AI-Agents/Marketing-Aligned-Multimodal-Orchestration-System",target:"_blank",rel:"noopener noreferrer", "aria-label":"View project code on GitHub",children:[R.jsx("svg", {width:60,height:60,viewBox:"0 0 24 24","aria-hidden":true,children:R.jsx("path",{fill:"currentColor",d:"M12 .75a11.25 11.25 0 0 0-3.558 21.922c.563.103.768-.244.768-.542 0-.267-.01-.974-.015-1.912-3.13.68-3.79-1.508-3.79-1.508-.512-1.3-1.25-1.646-1.25-1.646-1.022-.7.078-.686.078-.686 1.13.08 1.725 1.16 1.725 1.16 1.005 1.724 2.637 1.226 3.28.938.102-.729.393-1.226.715-1.508-2.499-.285-5.126-1.25-5.126-5.564 0-1.23.44-2.235 1.16-3.022-.116-.285-.503-1.43.11-2.98 0 0 .945-.302 3.094 1.154A10.79 10.79 0 0 1 12 6.176c.956.004 1.92.13 2.82.38 2.148-1.456 3.092-1.154 3.092-1.154.614 1.55.227 2.695.112 2.98.72.787 1.158 1.792 1.158 3.022 0 4.326-2.63 5.276-5.136 5.554.404.35.764 1.04.764 2.096 0 1.513-.014 2.733-.014 3.105 0 .3.203.65.774.54A11.252 11.252 0 0 0 12 .75Z"})}),R.jsx("strong",{children:"Code"})]})]}),
+      R.jsx("div", {className:"project-code-links", children:[R.jsxs("a", {href:"https://github.com/Multimodal-AI-Agents/Marketing-Aligned-Multimodal-Orchestration-System/blob/main/code_marketing-aligned-multimodal-orchestration-system.ipynb",target:"_blank",rel:"noopener noreferrer", "aria-label":"View project code on GitHub",children:[R.jsx("svg", {width:60,height:60,viewBox:"0 0 24 24","aria-hidden":true,children:R.jsx("path",{fill:"currentColor",d:"M12 .75a11.25 11.25 0 0 0-3.558 21.922c.563.103.768-.244.768-.542 0-.267-.01-.974-.015-1.912-3.13.68-3.79-1.508-3.79-1.508-.512-1.3-1.25-1.646-1.25-1.646-1.022-.7.078-.686.078-.686 1.13.08 1.725 1.16 1.725 1.16 1.005 1.724 2.637 1.226 3.28.938.102-.729.393-1.226.715-1.508-2.499-.285-5.126-1.25-5.126-5.564 0-1.23.44-2.235 1.16-3.022-.116-.285-.503-1.43.11-2.98 0 0 .945-.302 3.094 1.154A10.79 10.79 0 0 1 12 6.176c.956.004 1.92.13 2.82.38 2.148-1.456 3.092-1.154 3.092-1.154.614 1.55.227 2.695.112 2.98.72.787 1.158 1.792 1.158 3.022 0 4.326-2.63 5.276-5.136 5.554.404.35.764 1.04.764 2.096 0 1.513-.014 2.733-.014 3.105 0 .3.203.65.774.54A11.252 11.252 0 0 0 12 .75Z"})}),R.jsx("strong",{children:"Code"})]})]}),
       R.jsxs("main", {
         className: "max-w-6xl mx-auto p-6 py-12",
         children: [
@@ -41960,7 +41960,7 @@ function lJ() {
                                       size: 16,
                                       className: "text-blue-600",
                                     }),
-                                    "Horizontal Semantic Alignment across Modalities",
+                                    "Horizontal Semantic Alignment Across Modalities",
                                   ],
                                 }),
                                 R.jsx("div", {
@@ -42082,11 +42082,6 @@ function lJ() {
             children: R.jsxs("div", {
               className: "p-6",
               children: [
-                R.jsx("h3", {
-                  className:
-                    "text-xs font-semibold text-slate-500 uppercase tracking-wide mb-4",
-                  children: "Generated Video",
-                }),
                 R.jsx("div", {
                   className: "max-w-2xl mx-auto",
                   children: R.jsx("div", {
@@ -42099,6 +42094,11 @@ function lJ() {
                       src: tt.step3.video_src_en,
                     }),
                   }),
+                }),
+                R.jsx("h3", {
+                  className:
+                    "text-xs font-semibold text-slate-500 uppercase tracking-wide mt-3 text-center",
+                  children: "Generated Video",
                 }),
               ],
             }),
